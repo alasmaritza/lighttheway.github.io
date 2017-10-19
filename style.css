@@ -81,3 +81,11 @@ body,
 img.check {
     float:right;
 }
+
+.navbar-default {
+    background-color:white;
+}
+
+.navbar-brand {
+    padding: 8px 0px 5px 0px;
+}
