@@ -89,3 +89,16 @@ img.check {
 .navbar-brand {
     padding: 8px 0px 5px 0px;
 }
+
+.check {
+    border:solid 2px;
+    border-color: green;
+      width: 36px;
+    height:36px;
+    border-radius: 5px;
+    float:right;
+  }
+  
+  .mark {
+    display:none;
+  }
