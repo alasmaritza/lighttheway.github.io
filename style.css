@@ -44,6 +44,14 @@ body,
     height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato';
+}
+
+p, span {
+    font-family: 'Didact Gothic';
+}
+
 .view {
     background: url("https://carecoordinated.files.wordpress.com/2014/11/veterans-day-image.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
