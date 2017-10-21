@@ -90,7 +90,8 @@
                 </p>
             </div>
             <div class="col-sm-6">
-                <img class="tech" src="https://cdn.dribbble.com/users/134451/screenshots/848976/dribbble_flag_tag_1x.png" height="100px" width="100px">
+                <img class="tech" src="https://cdn.dribbble.com/users/134451/screenshots/848976/dribbble_flag_tag_1x.png" height="100px"
+                    width="100px">
                 <h3>Code for America</h3>
                 <p>Code for America uses the principles and practices of the digital age to improve how government serves the
                     American public, and how the public improves government. Since 2011, we’ve worked with thousands of tech
@@ -116,9 +117,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-    $(".check").click(function() {
-  $(".checked").toggleClass("mark");
-})
+        var startUp = function() {
+            $(document).on("scroll", appearingNav);
+        }
+
+        var appearingNav = function(e) {
+            $(".navbar").css("opacity", ($(document).scrollTop()/700));
+        }
+
+        $(document).ready(startUp);
     </script>
 
 </body>
