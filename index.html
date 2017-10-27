@@ -24,24 +24,29 @@
                 </button>
 
                 <ul class="nav navbar-nav">
-                        <li>
-                            <a class="navbar-brand" href="index.html">
-                                <img class="logo" src="http://www.qmmuseum.lee.army.mil/airborne/path.gif">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html">Project Light the Way</a>
-                        </li>
-                    </ul>
+                    <li>
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logo" src="http://www.qmmuseum.lee.army.mil/airborne/path.gif">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">Project Light the Way</a>
+                    </li>
+                </ul>
             </div>
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li><a href="#">Home</a></li> -->
                     <li>
-                        <a href="#partners">Partners</a>
+                        <a href="checklist.html">
+                            <button class="btn btn-success btn-xs">Go to Checklist</button>
+                        </a>
                     </li>
-                    <!-- <li><a href="#contact">Contact</a></li> -->
+                    <li>
+                        <a href="index.html#partners">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -50,13 +55,16 @@
     <!--End Navbar-->
 
     <div class="view">
+        <div class="overlay"></div>
         <!--Intro content-->
         <div class="full-bg-img flex-center searchBar">
-            <h1 style="background-color:rgba(0,0,0,0.5)" class="h1-responsive">Project Light the Way</h1>
+            <img class="logo-img" width="90px;" src="http://www.qmmuseum.lee.army.mil/airborne/path.gif">
+
+            <h1 class="h1-responsive">Ahead of you, to guide you</h1>
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
                     <a href="services.html">
-                        <input type="text" class="form-control input-lg" placeholder="Employment Services in Los Angeles" />
+                        <input type="text" class="form-control input-lg" placeholder="Start Here" />
                     </a>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="button">
@@ -69,7 +77,26 @@
         <!--/Intro content-->
     </div>
 
+
+
+
     <div class="container" id="partners">
+        <h2>Los Angeles' Best Veteran Resources</h2>
+        <h2>Pre Vetted by Vets, for Vets</h2>
+        <hr>
+        <a href="#">
+            <h3>About</h3>
+        </a>
+        <a href="#">
+            <h3>FAQ</h3>
+        </a>
+        <a href="#">
+            <h3>Team</h3>
+        </a>
+        <a href="#">
+            <h3>Contact</h3>
+        </a>
+        <hr>
         <div class="row">
             <h2>Partners</h2>
         </div>
@@ -90,6 +117,8 @@
                     for youth and families.</p>
             </div>
         </div>
+        <br>
+        <br>
         <div class="row">
             <div class="col-sm-6">
                 <img class="tech" src="https://d1o51r9qdgnnlz.cloudfront.net/profile/profile_LAMayorsoffice-0d4027ef-1990-4c92-9e86-50560a61312f.png"
@@ -133,7 +162,7 @@
         }
 
         var appearingNav = function (e) {
-            $(".navbar").css("opacity", ($(document).scrollTop() / 700));
+            $(".navbar").css("opacity", ($(document).scrollTop() / 500));
         }
 
         $(document).ready(startUp);

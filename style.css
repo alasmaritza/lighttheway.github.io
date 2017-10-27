@@ -57,7 +57,7 @@ p, span {
 }
 
 .view {
-    background: url("https://carecoordinated.files.wordpress.com/2014/11/veterans-day-image.jpg")no-repeat center center fixed;
+    background: url("https://az616578.vo.msecnd.net/files/2016/09/25/636103749606042853-1099775012_veterans.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -104,7 +104,7 @@ img.check {
 
 .check {
     border:solid 2px;
-    border-color: green;
+    border-color: rgba(0, 0, 0, 0.89);
       width: 36px;
     height:36px;
     border-radius: 5px;
@@ -113,7 +113,7 @@ img.check {
 
   .check.inCart{
     border:solid 2px;
-    border-color: green;
+    border-color: rgba(0, 0, 0, 0.89);
       width: 36px;
     height:36px;
     border-radius: 5px;
@@ -142,10 +142,6 @@ img.check {
     color: white;
     text-align: center;
   }
-  
-  .left-side {
-      border-right:solid 1px;
-  }
 
   .select {
       width: 17px;
@@ -157,9 +153,9 @@ img.check {
       list-style-type: none;
   }
 
-  .right-side h2 {
-      border-bottom:solid 1px;
-  }
+   .left-side {
+      border-right:solid 1px;
+  } 
 
   .addTo {
       float:right;
@@ -180,3 +176,40 @@ img.check {
       border-radius:5px;
   }
 
+  .index-h2 {
+      color:white;
+  }
+
+  .logo-img {
+      display:block;
+      margin:auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: rgba(39, 33, 121, 0.4);
+  }
+
+  .training {
+      /* background-color:#14b732;
+      border-radius:3px;
+      color:white; */
+      margin-top:0px;
+      padding-bottom:12px;
+  }
+
+  .serviceList {
+      border-bottom:solid 1px;
+      margin-bottom:10px;
+  }
+
+  .container .right-side {
+      /* border-left:solid 1px; */
+  }

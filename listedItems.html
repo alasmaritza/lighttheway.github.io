@@ -33,8 +33,24 @@
                         <a href="index.html">Project Light the Way</a>
                     </li>
                 </ul>
-                <!--/.nav-collapse -->
             </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="checklist.html">
+                            <button class="btn btn-success btn-xs">Go to Checklist</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#partners">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
     </nav>
     <!--End Navbar-->
 
@@ -94,7 +110,15 @@
             </div>
             <div class="col-sm-9 container right-side">
                 <div class="section">
-                    <h2>Training</h2>
+                    <div class="row serviceList">
+                        <div class="col-md-1">
+                            <img align="right" class="img-responsive" src="https://www.enviroscience.com.au/wp-content/uploads/2016/09/training-icon-11.png"
+                                width="100%">
+                        </div>
+                        <div class="col-md-11">
+                            <h2 class="training">Training</h2>
+                        </div>
+                    </div>
                     <a href="http://ypiusa.org/program/techhire">
                         <img src="http://playbook.techhire.org/img/TH%20header%20logo.png" width="20%">
                     </a>
@@ -122,6 +146,7 @@
                             <button class="btn addTo btn-success">Add to Checklist</button>
                         </div>
                     </div>
+                    <hr>
                     <a href="http://hireourheroes.org">
                         <img src="https://hireourheroes.org/wp-content/uploads/2014/03/HOH-1.jpg" width="20%">
                     </a>
@@ -154,9 +179,17 @@
                     </div>
                 </div>
                 <br>
-
+                <hr>
                 <div class="section">
-                    <h2>Mental Health</h2>
+                        <div class="row serviceList">
+                                <div class="col-md-1">
+                                    <img align="right" class="img-responsive" src="https://www.uottawa.ca/health/sites/www.uottawa.ca.health/files/icon-mental-health.png"
+                                        width="100%">
+                                </div>
+                                <div class="col-md-11">
+                                    <h2 class="training">Mental Health</h2>
+                                </div>
+                            </div>
                     <a href="http://mentalhealth.va.gov">
                         <img src="https://www.va.gov/va_files/2012/images/header-logo.png" width="20%">
                     </a>
@@ -179,6 +212,7 @@
                             <button class="btn addTo btn-success">Add to Checklist</button>
                         </div>
                     </div>
+                    <hr>
                     <a href="https://www.nami.org/Find-Support/Veterans-and-Active-Duty">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/NAMI_logo.gif/320px-NAMI_logo.gif" width="20%">
                     </a>
@@ -217,7 +251,9 @@
                     </a> -->
                 <hr>
                 <div>
-                    <a href="checklist.html"><button type="button" class="btn btn-success checklist col-md-4 col-md-offset-4">Go to Checklist</button></a>
+                    <a href="checklist.html">
+                        <button type="button" class="btn btn-success checklist col-md-4 col-md-offset-4">Go to Checklist</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -251,9 +287,6 @@
                 itemCount++;
                 var item = $(this).next().text();
                 cart.push(item);
-                //works to grab the selected items' text 
-                //need ability to deselect in future
-                //push to array would have to happen on go to cart/submit
                 console.log(cart)
             }
             $('#itemCount').html(itemCount).css('display', 'block');
