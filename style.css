@@ -1,7 +1,3 @@
-/* .navbar {
-    opacity: 0;
-} */
-
 #custom-search-input{
     padding: 3px;
     border: solid 1px #E4E4E4;
@@ -39,7 +35,9 @@
 }
 
 .logo {
-    height:35px;
+    height:30px;
+    display:block;
+    margin:auto;
 }
 
 html,
@@ -210,7 +208,16 @@ img.check {
       margin-bottom:10px;
   }
 
-  .logo-img.techhire, .addTo {
+  .logo-img.techhire, .addToCheck {
       margin-top:25px;
   }
+
+  .feedback {
+      margin: 10px;
+  }
+
+h1.checklist {
+    border-bottom:solid 1px;
+    padding-bottom:10px;
+}
 
