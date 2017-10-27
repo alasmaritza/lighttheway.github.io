@@ -161,3 +161,22 @@ img.check {
       border-bottom:solid 1px;
   }
 
+  .addTo {
+      float:right;
+  }
+
+  .address {
+      text-align:center;
+  }
+
+  .listTitle {
+      margin:0px;
+      padding:0px;
+  }
+
+  form {
+      background-color:rgba(128, 153, 153, 0.425);
+      padding:20px;
+      border-radius:5px;
+  }
+
