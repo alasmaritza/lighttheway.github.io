@@ -170,7 +170,7 @@ img.check {
       padding:0px;
   }
 
-  form {
+  form .send {
       background-color:rgba(128, 153, 153, 0.425);
       padding:20px;
       border-radius:5px;
@@ -210,6 +210,7 @@ img.check {
       margin-bottom:10px;
   }
 
-  .container .right-side {
-      /* border-left:solid 1px; */
+  .logo-img.techhire, .addTo {
+      margin-top:25px;
   }
+

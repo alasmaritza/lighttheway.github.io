@@ -38,7 +38,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="checklist.html">
-                            <button class="btn btn-success btn-xs">Go to Checklist</button>
+                            <button class="btn btn-success btn-xs">Checklist</button>
                         </a>
                     </li>
                     <li>
@@ -46,7 +46,6 @@
                             <span class="glyphicon glyphicon-align-justify"></span>
                         </a>
                     </li>
-                    <!-- <li><a href="#contact">Contact</a></li> -->
                 </ul>
 
             </div>
@@ -166,15 +165,10 @@
     <script type="text/javascript">
         var itemCount = 0;
         var startUp = function () {
-            // $(document).on("scroll", appearingNav);
             $(".check").on("click", checkMark);
             $(".myLocation").on("click", displayLocation);
             // $(".check").on("click", inCart);
         }
-
-        // var appearingNav = function(e) {
-        //     $(".navbar").css("opacity", ($(document).scrollTop()/100));
-        // }
 
         var checkMark = function () {
             $(".checked", this).toggleClass("mark");

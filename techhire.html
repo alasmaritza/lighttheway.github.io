@@ -38,7 +38,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="checklist.html">
-                            <button class="btn btn-success btn-xs">Go to Checklist</button>
+                            <button class="btn btn-success btn-xs">Checklist</button>
                         </a>
                     </li>
                     <li>
@@ -46,13 +46,11 @@
                             <span class="glyphicon glyphicon-align-justify"></span>
                         </a>
                     </li>
-                    <!-- <li><a href="#contact">Contact</a></li> -->
                 </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
-
 
     <div class="container">
         <br>
@@ -65,11 +63,11 @@
             </a>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <img src="http://playbook.techhire.org/img/TH%20header%20logo.png" width="60%">
-            </div>
             <div class="col-md-4 address">
                 <h1>TechHire</h1>
+            </div>
+            <div class="col-md-4">
+                <img class="logo-img techhire" src="http://playbook.techhire.org/img/TH%20header%20logo.png" width="60%">
             </div>
             <div class="col-md-4">
                 <button type="button" class="btn btn-success addTo">Add to Checklist</button>
@@ -107,8 +105,8 @@
             <p>Direct Number: (818) 277-7033</p>
         </div>
         <div class="row">
-            <button class="btn btn-success col-md-3 col-md-offset-1 recommend">Recommend</button>
-            <button class="btn btn-danger col-md-3 col-md-offset-4 recommend">Report</button>
+            <button class="btn btn-primary col-md-3 col-md-offset-1 feedback">Recommend</button>
+            <button class="btn btn-danger col-md-3 col-md-offset-4 feedback">Report</button>
         </div>
     </div>
 
@@ -117,12 +115,43 @@
         <p class="text-center">Project Light the Way 2017</p>
     </footer>
 
+
+    <div class="modal fade feedbackModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Give us your thoughts</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Name:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Bruce Dickinson">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Your Thoughts:</label>
+                            <textarea type="text" class="form-control" id="formGroupExampleInput2" placeholder=""></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary modal-close" data-dismiss="modal">Submit Feedback</button>
+                    <button type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         function startUp() {
             $(".addTo").on("click", added);
-            $(".recommend").on("click", recommend);
+            $(".feedback").on("click", feedback);
+            $(".modal-close").on("click", clearTitle);
         }
 
         var added = function (item) {
@@ -131,10 +160,16 @@
             $(this).text("Added");
         }
 
-        var recommend = function (item) {
-            event.preventDefault();
+        var feedback = function (item) {
             var item = this;
-            $(this).append("ed");
+            var title = $(this).text();
+            $(".feedbackModal").modal("show");
+            $(".modal-title").append(title);
+            // $(this).append("ed");
+        }
+
+        var clearTitle = function () {
+            $(".modal-title").text("");
         }
 
         $(document).ready(startUp)
