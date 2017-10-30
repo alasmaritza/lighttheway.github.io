@@ -107,26 +107,26 @@ img.check {
     height:36px;
     border-radius: 5px;
     float:right;
-  }
+}
 
-  .check.inCart{
+.check.inCart{
     border:solid 2px;
     border-color: rgba(0, 0, 0, 0.89);
       width: 36px;
     height:36px;
     border-radius: 5px;
     float:left;
-  }
+}
   
-  .mark {
+.mark {
     display:none;
-  }
+}
 
-  #partners {
+#partners {
       padding-top:75px;
-  }
+}
 
-  #itemCount {
+#itemCount {
     /* position: absolute; */
     /* display: none; */
     top: -10px;
@@ -139,51 +139,51 @@ img.check {
     background: #16867D;
     color: white;
     text-align: center;
-  }
+}
 
-  .select {
+.select {
       width: 17px;
       height:17px;
       border:solid 1px;
-  }
+}
 
-  .left-side ul li {
+.left-side ul li {
       list-style-type: none;
-  }
+}
 
-   .left-side {
+.left-side {
       border-right:solid 1px;
-  } 
+} 
 
-  .addTo {
+.addTo {
       float:right;
-  }
+}
 
-  .address {
+.address {
       text-align:center;
-  }
+}
 
-  .listTitle {
+.listTitle {
       margin:0px;
       padding:0px;
-  }
+}
 
-  form .send {
+form .send {
       background-color:rgba(128, 153, 153, 0.425);
       padding:20px;
       border-radius:5px;
-  }
+}
 
-  .index-h2 {
+.index-h2 {
       color:white;
-  }
+}
 
-  .logo-img {
+.logo-img {
       display:block;
       margin:auto;
-  }
+}
 
-  .overlay {
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -193,28 +193,28 @@ img.check {
     width: 100%;
     transition: .5s ease;
     background-color: rgba(39, 33, 121, 0.4);
-  }
+}
 
-  .training {
+.training {
       /* background-color:#14b732;
       border-radius:3px;
       color:white; */
       margin-top:0px;
       padding-bottom:12px;
-  }
+}
 
-  .serviceList {
+.serviceList {
       border-bottom:solid 1px;
       margin-bottom:10px;
-  }
+}
 
-  .logo-img.techhire, .addToCheck {
+.logo-img.techhire, .addToCheck {
       margin-top:25px;
-  }
+}
 
-  .feedback {
+.feedback {
       margin: 10px;
-  }
+}
 
 h1.checklist {
     border-bottom:solid 1px;
